@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #231f20;
+}
+
+main {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+ul li {
+  margin-right: 10px;
+}
+
+.card {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #231f20;
+}
+.card .cosaACaso,
+.card .cosaACaso:before,
+.card .cosaACaso span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.card .cosaACaso,
+.card .cosaACaso:before,
+.card .cosaACaso:after {
+  position: relative;
+}
+.card .cosaACaso {
+  font-size: large;
+  color: red;
+  top: -15px;
+}
+.card .cosaACaso:before {
+  content: "Questa è una card vuota, non so cosa inserire qui dentro. La specchio ed evito di scrivere 2 volte.";
+  top: 95px;
+  transform: scale(1, -1);
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  z-index: 1;
+}
+.card .cosaACaso:after {
+  content: "";
+  display: block;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgb(255, 255, 255) 50%);
+  z-index: 2;
+}
+
+button {
+  width: 400px;
+  height: 200px;
+  padding: 0 15px;
+  background: #888888;
+  background: radial-gradient(circle 20px at -20% 50%, transparent, transparent 100px, #197bbd 100px), radial-gradient(circle 20px at 120% 50%, transparent, transparent 100px, #197bbd 100px);
+  background-size: 100px 200px, 100px 200px;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+header {
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #31e981;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header ul {
+  margin-left: 2em;
+  padding: 1em 1em;
+  width: 25%;
+}
+header button {
+  font-size: 1.25em;
+  margin-right: 2em;
+}
+
+footer {
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #197bbd;
+  color: white;
+  width: 100%;
+}
+footer .container {
+  display: flex;
+}
+footer .container .row {
+  display: flex;
+  height: 100%;
+}
+footer .container .row .col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .row .col-4 > div > a {
+  text-decoration: none;
+  color: rgb(200, 4, 177);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+button {
+  // border: none;
+  // border-radius: 50px;
+  // background-color: $colorStarCommandBlue;
+  // height: $heightHeader;
+  // &:hover {
+  //   transform: scale(1.5);
+  // }
+  width: 400px;
+  height: 200px;
+  padding: 0 15px;
+  background: #888888;
+  background: radial-gradient(
+      circle 20px at -20% 50%,
+      transparent,
+      transparent 100px,
+      $colorStarCommandBlue 100px
+    ),
+    radial-gradient(
+      circle 20px at 120% 50%,
+      transparent,
+      transparent 100px,
+      $colorStarCommandBlue 100px
+    );
+  background-size: 100px 200px, 100px 200px;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}

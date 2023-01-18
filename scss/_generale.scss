@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $colorRaisinBlack;
+}
+
+main {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  li {
+    margin-right: 10px;
+  }
+}
+
+.card {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $colorRaisinBlack;
+  .cosaACaso,
+  .cosaACaso:before,
+  .cosaACaso span {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .cosaACaso,
+  .cosaACaso:before,
+  .cosaACaso:after {
+    position: relative;
+  }
+  .cosaACaso {
+    font-size: large;
+    color: red;
+    top: -15px;
+  }
+  .cosaACaso:before {
+    content: "Questa è una card vuota, non so cosa inserire qui dentro. La specchio ed evito di scrivere 2 volte.";
+    top: 95px;
+    transform: scale(1, -1);
+    backface-visibility: visible;
+    z-index: 1;
+  }
+  .cosaACaso:after {
+    content: "";
+    display: block;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    z-index: 2;
+  }
+}

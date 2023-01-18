@@ -1,0 +1,20 @@
+header {
+  z-index: 999;
+  position: sticky;
+  bottom: 0;
+  background-color: $colorMediumSpringGreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  ul {
+    margin-left: 2em;
+    padding: 1em 1em;
+    width: 25%;
+  }
+  button {
+    font-size: 1.25em;
+    margin-right: 2em;
+  }
+}

@@ -1,0 +1,26 @@
+footer {
+  z-index: 999;
+  position: sticky;
+  bottom: 0;
+  background-color: $colorStarCommandBlue;
+  color: white;
+  width: 100%;
+
+  .container {
+    display: flex;
+
+    .row {
+      display: flex;
+      height: 100%;
+      .col-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .col-4 > div > a {
+        text-decoration: none;
+        color: rgb(200, 4, 177);
+      }
+    }
+  }
+}
